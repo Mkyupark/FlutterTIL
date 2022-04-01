@@ -64,3 +64,23 @@ git branch를 만들면 현재 속해있는 branch의 log값(repository)들을 �
 
 ## 4. github란?
 github는 다른사람과 협업을 하기 위해 만들어진 원격저장소이다.
+
+
+## 5. 디렉토리에서 github와 연결?
+디렉토리에 있는 파일을 새로운 repository를 만들어 github에 연결을 했다고 생각해보자. 
+또한, github와 연결한 디렉토리는 master branch에 있다고 가정해보자.
+
+다른 사용자가 협업을 하기 위해 git clone을 사용해서 github에 있는 내용을 가져온다.
+
+이후 repository와 직접적으로 연결되어 있는 디렉토리에서 remote remove를 하면 어떻게 될까?
+-> 손상이 간다, 그 이후에 이 repository를 사용하는데 무수히 많은 오류가 발생한다.
+
+여기서 돌아가 생각해보면, 일반적으로 하나의 repository는 기본적으로 하나의 디렉토리와 연결이 되어있는데,
+그것을 clone해서 사용한다. 
+
+
+
+
+
+
+
