@@ -68,12 +68,15 @@ github는 다른사람과 협업을 하기 위해 만들어진 원격저장소�
 
 ## 5. 디렉토리에서 github와 연결?
 디렉토리에 있는 파일을 새로운 repository를 만들어 github에 연결을 했다고 생각해보자. 
-또한, github와 연결한 디렉토리는 master branch에 있다고 가정해보자.
+github와 연결한 디렉토리는 디폴트 branch인 master에 있을 것이다.
 
 다른 사용자가 협업을 하기 위해 git clone을 사용해서 github에 있는 내용을 가져온다.
 
 이후 repository와 직접적으로 연결되어 있는 디렉토리에서 remote remove를 하면 어떻게 될까?
--> 손상이 간다, 그 이후에 이 repository를 사용하는데 무수히 많은 오류가 발생한다.
+-> 손상이 간다, 그 이후에 이 repository를 사용하는데 무수히 많은 오류가 발생한다. 
+-> 그 repository에 더이상 pull push 불가능하다.
+
+__그렇다면 그러한 이유는 무엇일까?__
 
 여기서 돌아가 생각해보면, 일반적으로 하나의 repository는 기본적으로 하나의 디렉토리와 연결이 되어있는데,
 그것을 clone해서 사용한다. 
